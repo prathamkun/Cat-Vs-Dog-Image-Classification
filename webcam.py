@@ -4,7 +4,8 @@ import tensorflow as tf
 
 
 
-model = tf.keras.models.load_model("model.h5")   
+model = tf.keras.models.load_model("models/cat_dog_classifier.h5")
+   
 
 IMG_SIZE = 224
 CLASS_NAMES = ["Cat", "Dog"]   
