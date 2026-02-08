@@ -37,4 +37,21 @@ This project demonstrates the complete Machine Learning workflow:
 ## 📁 Project Structure
 
 ```
+CatDogClassifier/
+│
+├── dataset/ # Training dataset
+│ ├── Cat/
+│ └── Dog/
+│
+├── models/
+│ └── cat_dog_classifier.h5
+│
+├── train.py # Model training script
+├── clean_dataset.py # Remove corrupt images
+├── test_image.py # Test single image
+├── webcam.py # Real-time webcam detection
+├── app.py # Streamlit UI (optional)
+├── requirements.txt
+└── README.md
 ```
+
