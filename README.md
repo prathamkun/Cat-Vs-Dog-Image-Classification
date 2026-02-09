@@ -68,8 +68,8 @@ cd Cat-Vs-Dog-Image-Classification
 
 Create virtual environment:
 
-python3.11 -m venv .venv
-source .venv/bin/activate
+ python3.11 -m venv .venv
+source .venv/bin/activate 
 
 
 Install dependencies:
@@ -85,7 +85,7 @@ The Kaggle Dogs vs Cats dataset contains corrupt images.
 Run:
 
 
-python clean_dataset.py
+```python clean_dataset.py```
 
 
 ---
@@ -93,6 +93,67 @@ python clean_dataset.py
 ## 🏋️ Train Model
 
 
-python train.py
+```python train.py```
+
+
+After training, model will be saved inside:
+
+models/cat_dog_classifier.h5
+
+
+---
+
+## 📷 Real-Time Webcam Detection
+
+python webcam.py
+
+
+This will:
+
+- Open webcam
+- Detect image continuously
+- Show prediction + confidence
+
+Press **Q** to quit.
+
+---
+
+## 📊 Model Details
+
+- Architecture: MobileNetV2 (Transfer Learning)
+- Input size: 224x224
+- Optimizer: Adam
+- Loss: Binary Crossentropy
+- Validation Accuracy: ~98%
+
+---
+
+## ⚠️ Known Issues
+
+- Some datasets contain corrupted JPEG files (fixed using clean script).
+- TensorFlow requires NumPy < 2.0.
+
+---
+
+## 🎯 Future Improvements
+
+- Object detection bounding box
+- Real-time tracking
+- Better UI overlays
+- Streamlit deployment
+- Mobile deployment
+
+---
+
+## 👨‍💻 Author
+
+Pratham Kun
+
+---
+
+⭐ If you like this project, consider giving it a star!
+
+
+
 
 
