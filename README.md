@@ -55,3 +55,44 @@ CatDogClassifier/
 └── README.md
 ```
 
+---
+
+## 📦 Installation
+
+Clone repository:
+
+git clone https://github.com/your-username/Cat-Vs-Dog-Image-Classification.git
+
+cd Cat-Vs-Dog-Image-Classification
+
+
+Create virtual environment:
+
+python3.11 -m venv .venv
+source .venv/bin/activate
+
+
+Install dependencies:
+
+
+
+---
+
+## 🧹 Clean Dataset (IMPORTANT)
+
+The Kaggle Dogs vs Cats dataset contains corrupt images.
+
+Run:
+
+
+python clean_dataset.py
+
+
+---
+
+## 🏋️ Train Model
+
+
+python train.py
+
+
